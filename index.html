@@ -1,168 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower-market</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Styles/other-style.css">
 </head>
+
 <body>
-    <nav class="flex justify-between items-center max-w-[1140px] h-[71px] m-auto mt-[24px] ">
-        <div><img src="./assets/logo.png" alt=""></div>
-        <div>
-            <ul class="flex gap-[10px] pt-[22px] pb-[22px]">
-            <li style="color: #252432;"><a href="Abc">Home</a></li>
-            <li style="color: #8987A1;"><a href="Abc">Shop</a></li>
-            <li style="color: #8987A1;"><a href="Abc">About us</a></li>
-            <li style="color: #000000"><a href="Abc"><i class="fa-solid fa-cart-shopping"></i>Cart ($56)</a></li>
-        </ul>
-        </div>
+    <nav class="header-page-container">
+        <section class="flex justify-between items-center max-w-[1140px] h-[71px] m-auto mt-[24px] ">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="">
+            </div>
+
+            <div class="navbar">
+                <ul class="flex gap-[10px] pt-[22px] pb-[22px]">
+                    <li style="color: #252432;"><a href="#">Home</a></li>
+                    <li style="color: #8987A1;"><a href="#">Shop</a></li>
+                    <li style="color: #8987A1;"><a href="#">About us</a></li>
+
+                    <div class="cart-item">
+                        <p style="color: #000000"><i class="fa-solid fa-cart-shopping"></i>Cart ($56)</p>
+                    </div>
+                </ul>
+            </div>
+        </section>
     </nav>
-    <header>
+
         <!--banner section -->
-        <section  class="flex justify-between items-center max-w-[1140px] h-[461px] m-auto mt-[126px] ">
-             <div>
-            <h1 class="font-bold text-[65px]">ALWAYS <span style="color: #E95A08;">FRESH FLOWERS</span></h1>
-            <p style="color: rgba(0, 0, 0, 0.5); font-size: 22px; margin: 13px 0;">Indulge your senses with the beauty and fragrance of <br> our fresh flower shop. From classic roses to exotic <br> blooms, we offer a wide variety of fresh flowers that <br> are perfect for any occasion. </p>
-        </div>
-        <div>
-            <img style="height: 355px; min-width:570px" src="./assets/hero-flower.png" alt="">
-        </div>
+        <section id="hero-container"
+            class="flex justify-between items-center max-w-[1140px] h-[461px] m-auto mt-[126px] ">
+            <div class="hero-bottom">
+                <h1 class="font-bold text-[65px]">ALWAYS <span style="color: #E95A08;">FRESH FLOWERS</span></h1>
+                <p style="color: rgba(0, 0, 0, 0.5); font-size: 22px; margin: 13px 0;">Indulge your senses with the
+                    beauty and fragrance of <br> our fresh flower shop. From classic roses to exotic <br> blooms, we
+                    offer a wide variety of fresh flowers that <br> are perfect for any occasion. </p>
+            </div>
+            <div class="hero-top" style="height: 355px; min-width:570px">
+                <img src="./assets/hero-flower.png" alt="" width="100%" height="100%">
+            </div>
         </section>
 
 
         <!-- plants section -->
-         <section class="max-w-[1140px] m-auto">
+        <section id="plant-section" class="max-w-[1140px] m-auto plants-section">
             <h1 class="font-bold text-[65px] text-center"><span style="color: #E95A08;">Our</span> Plants </h1>
-            <p style="color: rgba(0, 0, 0, 0.5); margin-bottom: 50px;" class="font-[400px] text-[22px] text-center">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
-            <div class="grid grid-cols-4 gap-[10px]">
+            <p style="color: rgba(0, 0, 0, 0.5); margin-bottom: 50px;" class="font-[400px] text-[22px] text-center">
+                Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
+                exotic blooms, we offer a wide variety of fresh.</p>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-[10px] mt-3 mr-2 ml-2">
                 <div class="w-[270px]">
                     <img style="width: 270px;height: 322.94px;" src="./assets/sample-flower-image.png" alt="">
-                    <p style="text-align: center; font: size 22px; font-weight: 500; margin: 20px;">Lily Blossom <br><span style="font-weight: 700;">20 USD</span></p>
-                    <button style="font-size: 16px;font-weight: 600;  padding: 26px 83px 26px 83px; background-color: #E95A08; color: #FFFFFF;">ADD TO CART</button>
+                    <p style="text-align: center; font: size 22px; font-weight: 500; margin: 20px;">Lily Blossom
+                        <br><span style="font-weight: 700;">20 USD</span></p>
+                    <button
+                        style="font-size: 16px;font-weight: 600;  padding: 26px 83px 26px 83px; background-color: #E95A08; color: #FFFFFF;">ADD
+                        TO CART</button>
                 </div>
                 <div class="w-[270px]">
                     <img style="width: 270px;height: 322.94px;" src="./assets/sample-flower-image.png" alt="">
-                    <p style="text-align: center; font: size 22px; font-weight: 500; margin: 20px;">Lily Blossom <br><span style="font-weight: 700;">20 USD</span></p>
-                    <button style="font-size: 16px;font-weight: 600;  padding: 26px 83px 26px 83px; background-color: #E95A08; color: #FFFFFF;">ADD TO CART</button>
+                    <p style="text-align: center; font: size 22px; font-weight: 500; margin: 20px;">Lily Blossom
+                        <br><span style="font-weight: 700;">20 USD</span></p>
+                    <button
+                        style="font-size: 16px;font-weight: 600;  padding: 26px 83px 26px 83px; background-color: #E95A08; color: #FFFFFF;">ADD
+                        TO CART</button>
                 </div>
                 <div class="w-[270px]">
                     <img style="width: 270px;height: 322.94px;" src="./assets/sample-flower-image.png" alt="">
-                    <p style="text-align: center; font: size 22px; font-weight: 500; margin: 20px;">Lily Blossom <br><span style="font-weight: 700;">20 USD</span></p>
-                    <button style="font-size: 16px;font-weight: 600;  padding: 26px 83px 26px 83px; background-color: #E95A08; color: #FFFFFF;">ADD TO CART</button>
+                    <p style="text-align: center; font: size 22px; font-weight: 500; margin: 20px;">Lily Blossom
+                        <br><span style="font-weight: 700;">20 USD</span></p>
+                    <button
+                        style="font-size: 16px;font-weight: 600;  padding: 26px 83px 26px 83px; background-color: #E95A08; color: #FFFFFF;">ADD
+                        TO CART</button>
                 </div>
                 <div class="w-[270px]">
                     <img style="width: 270px;height: 322.94px;" src="./assets/sample-flower-image.png" alt="">
-                    <p style="text-align: center; font: size 22px; font-weight: 500; margin: 20px;">Lily Blossom <br><span style="font-weight: 700;">20 USD</span></p>
-                    <button style="font-size: 16px;font-weight: 600;  padding: 26px 83px 26px 83px; background-color: #E95A08; color: #FFFFFF;">ADD TO CART</button>
+                    <p style="text-align: center; font: size 22px; font-weight: 500; margin: 20px;">Lily Blossom
+                        <br><span style="font-weight: 700;">20 USD</span></p>
+                    <button
+                        style="font-size: 16px;font-weight: 600;  padding: 26px 83px 26px 83px; background-color: #E95A08; color: #FFFFFF;">ADD
+                        TO CART</button>
                 </div>
                 <div class="w-[270px]">
                     <img style="width: 270px;height: 322.94px;" src="./assets/sample-flower-image.png" alt="">
-                    <p style="text-align: center; font: size 22px; font-weight: 500; margin: 20px;">Lily Blossom <br><span style="font-weight: 700;">20 USD</span></p>
-                    <button style="font-size: 16px;font-weight: 600;  padding: 26px 83px 26px 83px; background-color: #E95A08; color: #FFFFFF;">ADD TO CART</button>
+                    <p style="text-align: center; font: size 22px; font-weight: 500; margin: 20px;">Lily Blossom
+                        <br><span style="font-weight: 700;">20 USD</span></p>
+                    <button
+                        style="font-size: 16px;font-weight: 600;  padding: 26px 83px 26px 83px; background-color: #E95A08; color: #FFFFFF;">ADD
+                        TO CART</button>
                 </div>
                 <div class="w-[270px]">
                     <img style="width: 270px;height: 322.94px;" src="./assets/sample-flower-image.png" alt="">
-                    <p style="text-align: center; font: size 22px; font-weight: 500; margin: 20px;">Lily Blossom <br><span style="font-weight: 700;">20 USD</span></p>
-                    <button style="font-size: 16px;font-weight: 600;  padding: 26px 83px 26px 83px; background-color: #E95A08; color: #FFFFFF;">ADD TO CART</button>
+                    <p style="text-align: center; font: size 22px; font-weight: 500; margin: 20px;">Lily Blossom
+                        <br><span style="font-weight: 700;">20 USD</span></p>
+                    <button
+                        style="font-size: 16px;font-weight: 600;  padding: 26px 83px 26px 83px; background-color: #E95A08; color: #FFFFFF;">ADD
+                        TO CART</button>
                 </div>
                 <div class="w-[270px]">
                     <img style="width: 270px;height: 322.94px;" src="./assets/sample-flower-image.png" alt="">
-                    <p style="text-align: center; font: size 22px; font-weight: 500; margin: 20px;">Lily Blossom <br><span style="font-weight: 700;">20 USD</span></p>
-                    <button style="font-size: 16px;font-weight: 600;  padding: 26px 83px 26px 83px; background-color: #E95A08; color: #FFFFFF;">ADD TO CART</button>
+                    <p style="text-align: center; font: size 22px; font-weight: 500; margin: 20px;">Lily Blossom
+                        <br><span style="font-weight: 700;">20 USD</span></p>
+                    <button
+                        style="font-size: 16px;font-weight: 600;  padding: 26px 83px 26px 83px; background-color: #E95A08; color: #FFFFFF;">ADD
+                        TO CART</button>
                 </div>
                 <div class="w-[270px]">
                     <img style="width: 270px;height: 322.94px;" src="./assets/sample-flower-image.png" alt="">
-                    <p style="text-align: center; font: size 22px; font-weight: 500; margin: 20px;">Lily Blossom <br><span style="font-weight: 700;">20 USD</span></p>
-                    <button style="font-size: 16px;font-weight: 600;  padding: 26px 83px 26px 83px; background-color: #E95A08; color: #FFFFFF;">ADD TO CART</button>
+                    <p style="text-align: center; font: size 22px; font-weight: 500; margin: 20px;">Lily Blossom
+                        <br><span style="font-weight: 700;">20 USD</span></p>
+                    <button
+                        style="font-size: 16px;font-weight: 600;  padding: 26px 83px 26px 83px; background-color: #E95A08; color: #FFFFFF;">ADD
+                        TO CART</button>
                 </div>
             </div>
-         </section>
+        </section>
 
 
         <!-- plant lover section -->
-         <section  class="flex justify-between items-center max-w-[1140px] m-auto mt-[126px] ">
-             <div class="flower-store">
-                 <img class="badge" style="height: 286px; width: 286px" src="./assets/trusted-badge.png" alt="">
-                 <img style="height:597px; min-width:540px;" src="./assets/flower-store.png" alt="">
+        <section id="hero-container-2" class="flex justify-between items-center max-w-[1140px] m-auto mt-[126px] ">
+            <div class="flower-store">
+                <img class="badge" style="height: 286px; width: 286px" src="./assets/trusted-badge.png" alt="">
+                <img style="height:597px; min-width:540px;" src="./assets/flower-store.png" alt="">
 
             </div>
-             <div style="width: 500px;">
-            <h1 class="font-bold text-[50px]">Flower & Plants Lover</h1>
-            <ul class="list-disc mt-5">
-                <li style="color: rgba(0, 0, 0, 0.5); font-size: 22px;">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
-                <br>
-                <li style="color: rgba(0, 0, 0, 0.5); font-size: 22px;">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
-                <br>
-                <li style="color: rgba(0, 0, 0, 0.5); font-size: 22px;">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+            <div style="width: 500px;">
+                <h1 class="font-bold text-[50px]">Flower & Plants Lover</h1>
+                <ul class="list-disc mt-5">
+                    <li style="color: rgba(0, 0, 0, 0.5); font-size: 22px;">Indulge your senses with the beauty and
+                        fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety
+                        of fresh.</li>
+                    <br>
+                    <li style="color: rgba(0, 0, 0, 0.5); font-size: 22px;">Indulge your senses with the beauty and
+                        fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety
+                        of fresh.</li>
+                    <br>
+                    <li style="color: rgba(0, 0, 0, 0.5); font-size: 22px;">Indulge your senses with the beauty and
+                        fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety
+                        of fresh.</li>
 
-            </ul>
-        </div>
+                </ul>
+            </div>
 
         </section>
 
         <!-- Latest Deals -->
-         <section class="max-w-[1140px] m-auto">
-            <h1 style="font-size: 50px; font-weight: 700;text-align: center; margin-top: 150px;"><span style="color: #E95A08;">Latest</span> Deals</h1>
-            <p style="font-size: 22px; font-weight: 400;text-align: center;color: rgba(0, 0, 0, 0.5); margin-bottom: 80px;">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
-           <div style="display: flex; justify-content: space-between;">
-            <div>
-             <div style="background-image: url(./assets/deal-bloom.png); height: 206px; width:366px; background-repeat: no-repeat; border-radius: 10px; background-size: cover;">
-                <div style="display: flex; flex-direction: column; text-align: center; padding-top: 80px;">
-                    <h1 style="color: #FFFFFF; font-weight: 700; font-size: 20px;">60% Off | Bloom Plant</h1>
-                <button style="color: #FFFFFF; font-weight: 600; font-size: 16px; text-decoration: underline; text-decoration-color: #FFFFFF;">Shop Now</button>
-                </div>
+        <section id="Latest-Deals" class="max-w-[1140px] m-auto">
+            <h1 style="font-size: 50px; font-weight: 700;text-align: center; margin-top: 150px;"><span
+                    style="color: #E95A08;">Latest</span> Deals</h1>
+            <p
+                style="font-size: 22px; font-weight: 400;text-align: center;color: rgba(0, 0, 0, 0.5); margin-bottom: 80px;">
+                Indulge your senses with the beauty and fragrance of our fresh flower shop. From  classic roses to
+                exotic blooms, we offer a wide variety of fresh.</p>
+            <div class="latest-deals" style="display: flex; justify-content: space-between;">
+                <div>
+                    <div
+                        style="background-image: url(./assets/deal-bloom.png); height: 206px; width:366px; background-repeat: no-repeat; border-radius: 10px; background-size: cover;">
+                        <div class="deal-card"
+                            style="display: flex; flex-direction: column; text-align: center; padding-top: 80px;">
+                            <h1 class="deal-titel-1" style="color: #FFFFFF; font-weight: 700; font-size: 20px;">60% Off
+                                | Bloom Plant</h1>
+                            <button
+                                style="color: #FFFFFF; font-weight: 600; font-size: 16px; text-decoration: underline; text-decoration-color: #FFFFFF;">Shop
+                                Now</button>
+                        </div>
 
-            </div>
-            <br>
-            <div style="background-image: url(./assets/deal-ana.png); height: 206px; width:366px; background-repeat: no-repeat; border-radius: 10px;background-size: cover;">
-                <div style="display: flex; flex-direction: column; text-align: center; padding-top: 80px;">
-                    <h1 style="color: #FFFFFF; font-weight: 700; font-size: 20px;">30% Off | Ana Plant</h1>
-                <button style="color: #FFFFFF; font-weight: 600; font-size: 16px;text-decoration: underline; text-decoration-color: #FFFFFF;">Shop Now</button>
-                </div>
-
-            </div>
-
-           </div>
-             <div style="background-image: url(./assets/deal-zabo.png); height: 440px; width: 753px; background-repeat: no-repeat; border-radius: 10px;background-size: cover;">
-                <div style="display: flex; flex-direction: column; text-align: center; padding-top: 180px;">
-                    <h1 style="color: #FFFFFF; font-weight: 700; font-size: 40px;">25% Off | Zabo Plant</h1>
-                <button style="color: #FFFFFF; font-weight: 600; font-size: 22px;text-decoration: underline; text-decoration-color: #FFFFFF;">Shop Now</button>
-                </div>
-
-            </div>
-
-           </div>
-         </section>
-
-        <!-- Join section -->
-
-        <section>
-            <div style="background-image: url(./assets/news-letter-bg.png); height: 533px; width: 100%;background-size: cover; margin-top: 100px;">
-
-                <h1 style="font-size: 50px;font-weight: 700;  color: #FFFFFF; text-align: center; padding-top: 200px; padding-bottom: 20px;">Join the colorful Bunch</h1>
-                <div style="display: flex; align-items: center;justify-content: center;">
-                    <div style="font-weight: 400;padding: 12px 20px 8px 20px; background-color: #FFFFFF;width: 640px; height: 50px;">
-                        <input type="email" name="" id="" placeholder="Write email ">
                     </div>
-                    <div>
-                        <button style="background-color: #E95A08; color: #FFFFFF;height: 50px;font-weight: 600; width: 186px;">Subscribe</button>
+                    <br>
+                    <div
+                        style="background-image: url(./assets/deal-ana.png); height: 206px; width:366px; background-repeat: no-repeat; border-radius: 10px;background-size: cover;">
+                        <div style="display: flex; flex-direction: column; text-align: center; padding-top: 80px;">
+                            <h1 style="color: #FFFFFF; font-weight: 700; font-size: 20px;">30% Off | Ana Plant</h1>
+                            <button
+                                style="color: #FFFFFF; font-weight: 600; font-size: 16px;text-decoration: underline; text-decoration-color: #FFFFFF;">Shop
+                                Now</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="ld-img"
+                    style="background-image: url(./assets/deal-zabo.png); height: 440px; width: 753px; background-repeat: no-repeat; border-radius: 10px;background-size: cover;">
+
+                    <div class="lg-txtalign" style="display: flex; flex-direction: column; text-align: center; padding-top: 180px;">
+                        <h1 style="color: #FFFFFF; font-weight: 700; font-size: 40px;">25% Off | Zabo Plant</h1>
+                        <button
+                            style="color: #FFFFFF; font-weight: 600; font-size: 22px;text-decoration: underline; text-decoration-color: #FFFFFF;">Shop
+                            Now</button>
                     </div>
                 </div>
             </div>
         </section>
 
-    </header>
-   
+        <!-- Join section -->
+
+        <section>
+            <div class="join-container"
+                style="background-image: url(./assets/news-letter-bg.png); height: 533px; width: 100%;background-size: cover; margin-top: 100px;">
+
+                <h1 class="join-title"
+                    style="font-size: 50px;font-weight: 700;  color: #FFFFFF; text-align: center; padding-top: 200px; padding-bottom: 20px;">
+                    Join the colorful Bunch</h1>
+
+                <div class="join-title join-form" style="display: flex; align-items: center; justify-content: center;">
+                    <div class="join-btn"
+                        style="font-weight: 400;padding: 12px 20px 8px 20px; background-color: #FFFFFF;width: 640px; height: 50px;">
+                        <input type="email" name="" id="" placeholder="Write email ">
+                    </div>
+                    <div class="join-btn">
+                        <button
+                            style="background-color: #E95A08; color: #FFFFFF;height: 50px;font-weight: 600; width: 186px;">Subscribe</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
     <footer>
-        <section div class="max-w-[1140px] m-auto grid grid-cols-4 pt-[50px] pb-[50px]">
+        <section class="max-w-[1140px] m-auto grid grid-cols-1 lg:grid-cols-4 pt-[50px] pb-[100px]">
             <div style="padding-right: 70px; ">
                 <img src="./assets/logo.png" alt="">
-                <p style="color: rgba(0, 0, 0, 0.5); font-size: 22px; font-weight: 400;">Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
+                <p style="color: rgba(0, 0, 0, 0.5); font-size: 22px; font-weight: 400;">Indulge your senses with the
+                    beauty and fragrance of our fresh flower shop. </p>
             </div>
             <div style="color: rgba(0, 0, 0, 0.5);">
                 <button>Home</button>
@@ -175,7 +241,7 @@
                 <br><br>
                 <button>Contact Us</button>
             </div>
-            <div style="color: rgba(0, 0, 0, 0.5);"">
+            <div style="color: rgba(0, 0, 0, 0.5);">
                 <button>Features</button>
                 <br><br>
                 <button>Pricing</button>
@@ -186,7 +252,7 @@
                 <br><br>
                 <button>Help Center</button>
             </div>
-            <div class="grid grid-cols-4">
+            <div class="grid grid-cols-4 gap-[10px]">
                 <img src="./assets/icon-linkedin.png" alt="">
                 <img style="margin-top: 9px;" src="./assets/icon-twitter.png" alt="">
                 <img src="./assets/icon-facebook.png" alt="">
@@ -195,4 +261,5 @@
         </section>
     </footer>
 </body>
+
 </html>

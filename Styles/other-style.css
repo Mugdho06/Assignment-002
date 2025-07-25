@@ -1,9 +1,131 @@
-.flower-store{
+.flower-store {
     position: relative;
 }
-.badge{
+
+.badge {
     position: absolute;
     left: 350px;
-   top: -120px;
+    top: -120px;
 }
 
+
+@media screen and (max-width: 576px) {
+    .navbar li {
+        display: none;
+    }
+
+    nav {
+        height: 260px;
+    }
+
+    .cart-item {
+        align-self: flex-end;
+        padding-right: 0px;
+    }
+
+    .logo {
+        width: 90px;
+        padding: 0 10px;
+    }
+
+    #hero-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .hero-bottom h1{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .hero-bottom p{
+        font-size: 16px !important;
+        font-weight: 400 !important;
+    }
+
+    #hero-container-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flower-store .badge {
+        display: none;
+    }
+
+    .latest-deals {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .deal-card-3 {
+        height: 200px;
+        text-align: center;
+    }
+
+    .join-container {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .join-title {
+        font-size: 1.3rem
+    }
+
+    .join-input {
+        width: 100%;
+        max-width: 100px;
+        padding: 10px;
+    }
+
+    /* plants-section */
+    #plant-section h1{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    #plant-section p{
+         font-size: 16px !important;
+        font-weight: 400;
+    }
+    .plants-section .grid {
+        display: grid;
+        grid-gap: 25px;
+    }
+
+    .plants-section .grid div {
+        width: 240px;
+    }
+
+    .ld-img {
+        width: 370px !important;
+        margin-top: 10px;
+        height: 206px !important;
+        position: relative;
+    }
+
+    .ld-img .lg-txtalign {
+        position: absolute;
+        top: 70px;
+        padding-top: 0px !important;
+        left: 90px;
+    }
+
+    .ld-img .lg-txtalign h1 {
+        font-weight: 500 !important;
+        font-size: 22px !important;
+    }
+
+    /* join section  */
+    .join-container {
+        height: 200px !important;
+        width: 100% !important;
+        margin-top: 40px !important;
+        margin: 0px auto;
+    }
+    .join-container h1{
+        color:red;
+        padding:0px !important;
+        font-size: 25px !important;
+        font-weight: 500 !important;
+        text-align: center !important;
+        padding-bottom: 10px !important;
+    } 
+}
