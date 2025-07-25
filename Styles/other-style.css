@@ -1,3 +1,9 @@
+.page-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
 .flower-store {
     position: relative;
 }
@@ -8,8 +14,127 @@
     top: -120px;
 }
 
+/* Plant Section */
+.products-container {
+    width: 1140px;
+    margin: auto;
+}
 
-@media screen and (max-width: 576px) {
+#hero-titles {
+    color: #E95A08;
+
+}
+
+.product-title {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.product-description {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.planets-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.planet-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.planet-card img {
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+.planet-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.planet-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #E95A08;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 250px;
+}
+
+.plants-lover-container {
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    gap: 50px;
+}
+
+/* Joint section */
+.join-container {
+    background-image: url(../assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+    height: 530px;
+
+    margin-top: 50px;
+}
+
+.join-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.join-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.join-input {
+    width: 670px;
+    padding: 20px;
+    border: none;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: #FFFFFF;
+}
+
+.join-btn {
+    background-color: #E95A08;
+    color: #FFFFFF;
+    padding: 20px 30px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px) {
     .navbar li {
         display: none;
     }
@@ -20,7 +145,7 @@
 
     .cart-item {
         align-self: flex-end;
-        padding-right: 0px;
+        padding-right: 15px;
     }
 
     .logo {
@@ -33,11 +158,13 @@
         flex-direction: column-reverse;
         align-items: center;
     }
-    .hero-bottom h1{
+
+    .hero-bottom h1 {
         font-size: 24px;
         font-weight: 700;
     }
-    .hero-bottom p{
+
+    .hero-bottom p {
         font-size: 16px !important;
         font-weight: 400 !important;
     }
@@ -45,6 +172,10 @@
     #hero-container-2 {
         flex-direction: column;
         align-items: center;
+    }
+
+    #hero-container-2 .flower-text-div {
+        padding-left: 20px;
     }
 
     .flower-store .badge {
@@ -77,23 +208,44 @@
     }
 
     /* plants-section */
-    #plant-section h1{
-        font-size: 24px;
-        font-weight: 700;
-    }
-    #plant-section p{
-         font-size: 16px !important;
-        font-weight: 400;
-    }
-    .plants-section .grid {
-        display: grid;
-        grid-gap: 25px;
+    .product-title {
+        font-size: 1.5rem;
     }
 
-    .plants-section .grid div {
-        width: 240px;
+    .product-description {
+        font-size: 1rem;
+        max-width: 100%;
+        padding: 0 15px;
     }
 
+    .products-container {
+        width: 280px;
+    }
+
+    .planets-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px !important;
+    }
+
+    .planet-card img {
+        width: 160px;
+        max-width: 250px;
+    }
+
+    .btn-primary {
+        width: 160px;
+        max-width: 250px;
+    }
+
+    .plants-lover-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 10px;
+    }
+
+
+    /* letest deals section */
     .ld-img {
         width: 370px !important;
         margin-top: 10px;
@@ -115,17 +267,51 @@
 
     /* join section  */
     .join-container {
-        height: 200px !important;
-        width: 100% !important;
-        margin-top: 40px !important;
-        margin: 0px auto;
+        height: auto;
+        padding: 40px 20px;
+        margin-top: 50px;
     }
-    .join-container h1{
-        color:red;
-        padding:0px !important;
-        font-size: 25px !important;
-        font-weight: 500 !important;
-        text-align: center !important;
-        padding-bottom: 10px !important;
-    } 
+
+    .join-title {
+        font-size: 1.3rem;
+    }
+
+    .join-input {
+        width: 100%;
+        max-width: 100px;
+        padding: 10px;
+    }
+
+    .join-btn {
+        width: 100%;
+        max-width: 100px;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 412px) {
+    nav {
+        height: 50px;
+    }
+
+    .hero-container .hero-top{
+       height: 300px;
+       width: 500px;
+    }
+    
+    .hero-container .hero-top img{
+        width:90% !important;
+        height: 100%;  
+    }
+    
+    #hero-container-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero-container-2 .flower-text-div {
+        width: 412px !important;
+        padding-left: 10px;
+    }
 }
